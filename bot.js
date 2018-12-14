@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "S.";
+const prefix = "X";
 /////////////////////////
 ////////////////////////
 
@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'S.help') {
+    if (message.content === 'Xhelp') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (%)**')
@@ -331,8 +331,8 @@ client.on('message', message => {
 });
 
 
-const adminprefix = "S.";
-const devs = ['283580465862934539','376792971573460996'];
+const adminprefix = "X";
+const devs = ['283580465862934539','283580465862934539'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -350,7 +350,7 @@ if (message.content.startsWith(adminprefix + 'setgame')) {
       message.channel.send(` ☑ Client Activity Now Is : \`Listening ${argresult} \` `)
       } else     
 if (message.content.startsWith(adminprefix + 'setT')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/squad");
+  client.user.setGame(argresult, "https://www.twitch.tv/xmas_yt");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 });
