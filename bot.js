@@ -325,7 +325,7 @@ client.on('message', message => {
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('By SaDik')
+        .setFooter('By XMAS')
       message.channel.send(helpEmbed);
     }
 });
